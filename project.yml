@@ -1,0 +1,37 @@
+name: Briefly
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: en
+  xcodeVersion: "26.0"
+
+targets:
+  Briefly:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - Sources/App
+      - Sources/Features
+    settings:
+      SWIFT_VERSION: "5.10"
+      CODE_SIGN_STYLE: Manual
+      DEVELOPMENT_TEAM: ""
+      ENABLE_USER_SCRIPT_SANDBOXING: YES
+      DEAD_CODE_STRIPPING: YES
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Briefly
+        CFBundleIdentifier: com.example.briefly
+        CFBundleVersion: "1"
+        CFBundleShortVersionString: "1.0"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight

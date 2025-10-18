@@ -1,0 +1,40 @@
+# Cursor Rules for Briefly iOS App
+
+## Source of Truth
+- Everything under `/blueprints` is the **source of truth** for:
+  - Project structure and layout
+  - Build settings and configuration
+  - App entry points and dependencies
+  - Commands and workflows
+
+## Required Updates
+When changing **any** of these files:
+- `project.yml`
+- `Makefile`
+- Files under `Sources/`
+- Adding/changing dependencies
+
+**MUST** update:
+1. Relevant blueprint(s) under `/blueprints`
+2. Derived human docs under `/docs` to mirror changes in plain English
+
+## Project Structure Rules
+- **NEVER** introduce Xcode folder references (blue folders)
+- **ONLY** use groups (yellow) via XcodeGen
+- **NO** paths pointing to "." or traversing into *.xcodeproj
+- **ONLY** `project.yml` controls the project file
+
+## After Changes
+- After changes to `project.yml` or `Sources/`:
+  - Instruct user to run `make gen` to regenerate project
+  - Then `make open` to open in Xcode
+
+## Documentation Style
+- Keep docs simple and immediately actionable
+- Prefer short commands + short explanations over prose
+- Use bullet points for clarity
+
+## Restrictions
+- Do not add tests or CI unless explicitly asked
+- Do not add SwiftLint/SwiftFormat or third-party packages unless asked
+- Keep changes minimal and focused
