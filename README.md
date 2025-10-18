@@ -18,6 +18,14 @@ They're designed for agents and engineers to maintain consistency.
 - Implementation guidance
 - Plain English explanations
 
+## What are Kits?
+
+**Kits** (`/kits`) are copy-paste templates for creating new projects:
+- **K01-basic-app.md**: Complete XcodeGen + Blueprints + Docs backbone (just specify app name)
+- **K02-ui-tabs.md**: SwiftUI tab navigation (specify 4 tab names + SF Symbol icons)
+- Self-contained with exact file contents and token replacement
+- Designed to be injected into any Cursor context to recreate this project structure
+
 ## Quick Start
 
 ```bash
@@ -28,6 +36,18 @@ brew install xcodegen
 make gen
 make open
 ```
+
+## Using Kits
+
+To create a new project with this structure:
+
+1. **Copy K01-basic-app.md** into your new project's Cursor chat
+2. Tell Cursor your app name
+3. **Copy K02-ui-tabs.md** into the same Cursor chat  
+4. Tell Cursor your 4 tab names and SF Symbol icons
+5. Run `make gen && make open`
+
+The kits contain all necessary files with token replacement for easy customization.
 
 ## Why This Can't Corrupt
 
