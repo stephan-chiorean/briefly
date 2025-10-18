@@ -25,10 +25,13 @@ Then in Xcode:
 - **Type**: `@main` App struct
 - **Purpose**: SwiftUI app lifecycle
 
-### Main View
-- **File**: `Sources/Features/ContentView.swift`
-- **Type**: SwiftUI View
-- **Purpose**: Main UI content
+### Navigation Structure
+- **ContentView**: Landing page with "Get Started" button
+- **MainTabView**: Bottom tab navigation container
+- **HomeView**: Welcome page (Home tab)
+- **ExploreView**: Content discovery (Explore tab)
+- **TrendingView**: Popular content (Trending tab)
+- **ProfileView**: User account (Profile tab)
 
 ## Troubleshooting
 

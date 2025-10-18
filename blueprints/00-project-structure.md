@@ -12,7 +12,12 @@
 │   ├── App/                  # App entry point
 │   │   └── BrieflyApp.swift  # @main App struct
 │   └── Features/             # Feature modules
-│       └── ContentView.swift # Main UI view
+│       ├── ContentView.swift # Landing page with navigation
+│       ├── MainTabView.swift # Bottom tab navigation
+│       ├── HomeView.swift    # Home tab content
+│       ├── ExploreView.swift # Explore tab content
+│       ├── TrendingView.swift # Trending tab content
+│       └── ProfileView.swift # Profile tab content
 ├── blueprints/               # Source of truth (this directory)
 │   ├── 00-project-structure.md
 │   ├── 01-xcodegen-setup.md

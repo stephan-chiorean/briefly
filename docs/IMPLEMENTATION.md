@@ -6,16 +6,21 @@
 - **File**: `Sources/App/BrieflyApp.swift`
 - **Purpose**: SwiftUI app lifecycle and main window
 
-### Main View
-- **File**: `Sources/Features/ContentView.swift`
-- **Purpose**: Main UI content and user interface
+### Navigation Structure
+- **ContentView**: Landing page with "Get Started" button that navigates to main app
+- **MainTabView**: Bottom tab navigation with 4 tabs
+- **HomeView**: Welcome page with "Welcome to Briefly" content
+- **ExploreView**: Content discovery placeholder
+- **TrendingView**: Trending content placeholder  
+- **ProfileView**: User profile placeholder
 
 ## Adding New Features
 
 ### New Screens
 1. Create new Swift file in `Sources/Features/`
 2. Follow SwiftUI View protocol
-3. No project configuration needed (auto-discovered)
+3. Add to MainTabView if it's a new tab
+4. No project configuration needed (auto-discovered)
 
 ### New Directories
 1. Create directory under `Sources/`
