@@ -24,6 +24,12 @@ Kits are **self-contained templates** that can be injected into any Cursor conte
 - **What you get**: Customizable tab navigation with your chosen names/icons
 - **Use case**: Adding navigation to any iOS app
 
+### K03-card-carousel.md
+**Generic horizontal card carousel component**
+- **What you specify**: Card data model, card view component, section configuration
+- **What you get**: Reusable carousel with section headers, descriptions, and snap scrolling
+- **Use case**: Creating horizontal card carousels with multiple sections
+
 ## How to Use Kits
 
 1. **Copy** the kit content into your new project's Cursor chat

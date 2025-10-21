@@ -25,8 +25,11 @@ Sources/Features/
 ### Individual View Files
 **Pattern**: Each tab has its own view file
 - **Naming**: `{TabName}View.swift`
-- **Structure**: Consistent across all views
-- **Dependencies**: None (self-contained)
+- **Structure**: Varies by complexity
+  - Simple views: Basic VStack with icon, title, subtitle
+  - Complex views: Custom components and data structures (e.g., HomeView with persona carousels)
+- **Dependencies**: May include custom structs and components
+- **HomeView**: Contains PersonaCard model, PersonaCardView, PersonaDetailView, and PersonaCarouselSection
 
 ## Design Rationale
 
