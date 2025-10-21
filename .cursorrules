@@ -17,6 +17,7 @@ When changing **any** of these files:
 **MUST** update:
 1. Relevant blueprint(s) under `/blueprints`
 2. Derived human docs under `/docs` to mirror changes in plain English
+3. Relevant design docs under `/design` if architectural decisions change
 
 ## Project Structure Rules
 - **NEVER** introduce Xcode folder references (blue folders)
@@ -38,6 +39,12 @@ When changing **any** of these files:
 - Do not add tests or CI unless explicitly asked
 - Do not add SwiftLint/SwiftFormat or third-party packages unless asked
 - Keep changes minimal and focused
+
+## Design Awareness
+- **Always consider design decisions** when making changes to UI, architecture, or structure
+- **Read relevant design docs** in `/design` before modifying related files
+- **Update design docs** when making architectural changes that affect design decisions
+- **Maintain design consistency** across all changes
 
 ## Kits
 When changing `project.yml` or files under `Sources/` or `blueprints/`, update the relevant kit(s) in `/kits` so future projects inherit the changes. iOS invariant: XcodeGen-only; no blue folders; no paths to "." or into `*.xcodeproj`. After changes: `make gen && make open`.
