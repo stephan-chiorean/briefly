@@ -1,28 +1,28 @@
 import SwiftUI
 
-struct TrendingView: View {
+struct SavedView: View {
     var body: some View {
         VStack(spacing: 20) {
-            Image(systemName: "chart.line.uptrend.xyaxis")
+            Image(systemName: "bookmark.fill")
                 .font(.system(size: 50))
                 .foregroundColor(.orange)
             
-            Text("Trending")
+            Text("Saved")
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
-            Text("What's popular now")
+            Text("Your saved content")
                 .font(.title3)
                 .foregroundColor(.secondary)
         }
         .padding()
-        .navigationTitle("Trending")
+        .navigationTitle("Saved")
         .navigationBarTitleDisplayMode(.large)
     }
 }
 
 #Preview {
     NavigationView {
-        TrendingView()
+        SavedView()
     }
 }

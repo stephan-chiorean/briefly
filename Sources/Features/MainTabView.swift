@@ -15,10 +15,10 @@ struct MainTabView: View {
                     Text("Explore")
                 }
             
-            TrendingView()
+            SavedView()
                 .tabItem {
-                    Image(systemName: "chart.line.uptrend.xyaxis")
-                    Text("Trending")
+                    Image(systemName: "bookmark.fill")
+                    Text("Saved")
                 }
             
             ProfileView()
